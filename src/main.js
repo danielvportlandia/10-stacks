@@ -1,11 +1,7 @@
-// 'use strict';
+'use strict';
 
-// const Stack = require('./lib/stack');
+const postfix = require('./lib/postfix');
 
-// const testStack = new Stack();
+const example1 = '5 3 6 * + 5 3 / - 7 +';
 
-// testStack.push(5);
-// testStack.push(10);
-// testStack.push(99);
-// testStack.peek();
-// console.log('final', testStack.isEmpty());
+console.log(postfix.solve(example1));
